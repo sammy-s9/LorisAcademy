@@ -16,21 +16,83 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <style>
+    .nav-link{
+      color: white !important;
+    }
+  </style>
 </head>
 
-<body>
+<body dir="rtl">
+<div class="container-fluid">
+  <div id="main-header" class="vh-100">
+    <div class="vh-100" style="background-color: rgba(0,0,0,0.3)">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="margin-right: 100px;" href="#">
+            <img src="img/Loris-Logo-03.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">صفحه اصلی</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">دوره ها</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">درباره ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">اساتید</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تماس با ما</a>
+              </li>
+            </ul>
+            <form class="d-flex" style="margin-left: 100px;">
+              <a href="#" class="align-self-center text-white"><i class="far fa-xl fa-search me-4"></i></a>
+              <button class="btn btn-outline-light" type="submit">
+                <i class="fal fa-xl fa-user align-self-center me-2 text-white"></i>
+                ورود / ثبت نام
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="vertical-center text-center">
+        <h1 class="text-white">
+          لوریس آکادمی
+          <br>
+          مرکز برگزاری
+          <br>
+          دوره های آموزشی و کارآموزی
+        </h1>
+        <button class="btn btn-primary mt-2">
+          دوره های آموزشی
+        </button>
+      </div>
+    </div>
 
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  </div>
+</div>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
 </body>
 
 </html>

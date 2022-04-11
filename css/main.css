@@ -6,6 +6,49 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+/*Custom Fonts*/
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/YekanBakh-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/YekanBakh-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/YekanBakh-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/YekanBakh.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/YekanBakh-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: yekanbakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/YekanBakh-Heavy.ttf') format('truetype');
+}
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -86,7 +129,38 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  font-family: yekanbakh, Tahoma, serif !important;
+}
 
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+.nav-item{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+#main-header{
+  background-image: url("/img/Mask Group 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vertical-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-primary{
+  background-color: #9164E8;
+  border-color: #9164E8;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -173,9 +247,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
