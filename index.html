@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://github.com/sammy-s9/LorisAcademy">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
+  <!--  <link rel="manifest" href="site.webmanifest">-->
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
@@ -23,53 +23,54 @@
   <meta name="theme-color" content="#fafafa">
 
   <style>
-    .nav-link{
+    .nav-link {
       color: white !important;
     }
   </style>
 </head>
 
 <body dir="rtl">
-<div class="container-fluid">
+<div class="container-fluid ps-0 pe-0">
+  <nav id="navbar" class="navbar navbar-light bg-transparent sticky-top navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="margin-right: 100px;" href="#">
+        <img src="img/Loris-Logo-03.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">صفحه اصلی</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">دوره ها</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">اساتید</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">تماس با ما</a>
+          </li>
+        </ul>
+        <form class="d-flex" style="margin-left: 100px;">
+          <a href="#" class="align-self-center text-white"><i class="far fa-xl fa-search me-4"></i></a>
+          <button class="btn btn-outline-light" type="submit">
+            <i class="fal fa-xl fa-user align-self-center me-2 text-white"></i>
+            ورود / ثبت نام
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
   <div id="main-header" class="vh-100">
     <div class="vh-100" style="background-color: rgba(0,0,0,0.3)">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" style="margin-right: 100px;" href="#">
-            <img src="img/Loris-Logo-03.png" alt="Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">صفحه اصلی</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">دوره ها</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">درباره ما</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">اساتید</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">تماس با ما</a>
-              </li>
-            </ul>
-            <form class="d-flex" style="margin-left: 100px;">
-              <a href="#" class="align-self-center text-white"><i class="far fa-xl fa-search me-4"></i></a>
-              <button class="btn btn-outline-light" type="submit">
-                <i class="fal fa-xl fa-user align-self-center me-2 text-white"></i>
-                ورود / ثبت نام
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
       <div class="vertical-center text-center">
         <h1 class="text-white">
           لوریس آکادمی
@@ -83,16 +84,197 @@
         </button>
       </div>
     </div>
-
   </div>
+
+  <section>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col">
+        <div class="row row-cols-lg-2 row-cols-md-1 gx-0 gy-0">
+          <div class="rounded text-center d-flex align-items-center"
+               style="width: 215px; height: 225px; background-color: var(--primary-color); border: 1px solid var(--primary-color)">
+            <h4 class="text-white">لورم ایپسوم متن ساختگی با نامفهوم از چاپ استفاده</h4>
+          </div>
+          <img class="rounded" src="img/TeamWork.png" alt="group">
+          <div id="laptop-block" class="rounded"></div>
+          <img class="rounded" src="img/Mask-Group4.png" alt="group">
+        </div>
+      </div>
+      <div class="col">
+        <small>درباره ما</small>
+        <h3>ما را بیشتر بشناسید</h3>
+        <p class="me-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+          چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت
+          فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+          خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+          راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+          پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+        <br>
+        <button class="btn btn-primary">بیشتر بخوانید</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 150px;">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <small>رشته ها</small>
+        <h3>آشنایی با رشته ها</h3>
+        <p class="me-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+          چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت
+          فراوان جامعه و متخصصان را می طلبد،</p>
+        <div class="hs__header">
+          <div class="hs__arrows"><a class="arrow arrow-next"></a><a class="arrow arrow-prev"></a></div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <div class="container">
+          <div class="hs__wrapper">
+            <ul class="hs">
+              <li class="hs__item">
+                <div class="hs__item__wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-lightbulb-on"></i>
+                      </div>
+                      <h4>لورم ایپسوم متن </h4>
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                      </p>
+                      <a href="#"><small>بیشتر بدانید ></small></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hs__item">
+                <div class="hs__item__wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-video"></i>
+                      </div>
+                      <h4>لورم ایپسوم متن </h4>
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                      </p>
+                      <a href="#"><small>بیشتر بدانید ></small></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hs__item">
+                <div class="hs__item__wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-head-side-goggles"></i>
+                      </div>
+                      <h4>لورم ایپسوم متن </h4>
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                      </p>
+                      <a href="#"><small>بیشتر بدانید ></small></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hs__item">
+                <div class="hs__item__wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-face-meh"></i>
+                      </div>
+                      <h4>لورم ایپسوم متن </h4>
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                      </p>
+                      <a href="#"><small>بیشتر بدانید ></small></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hs__item">
+                <div class="hs__item__wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-file-certificate"></i>
+                      </div>
+                      <h4>لورم ایپسوم متن </h4>
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                      </p>
+                      <a href="#"><small>بیشتر بدانید ></small></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hs__item">
+                <div class="hs__item__wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                      </div>
+                      <h4>لورم ایپسوم متن </h4>
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                      </p>
+                      <a href="#"><small>بیشتر بدانید ></small></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hs__item">
+                <div class="hs__item__wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-school-circle-check"></i>
+                      </div>
+                      <h4>لورم ایپسوم متن </h4>
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                      </p>
+                      <a href="#"><small>بیشتر بدانید ></small></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hs__item">
+                <div class="hs__item__wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="fa-solid fa-typewriter"></i>
+                      </div>
+                      <h4>لورم ایپسوم متن </h4>
+                      <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                      </p>
+                      <a href="#"><small>بیشتر بدانید ></small></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/all.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
