@@ -163,6 +163,11 @@ small {
   color: black;
 }
 
+/* Main Menu Color */
+#navbarSupportedContent > ul > li > a {
+  color: white !important;
+}
+
 #main-header {
   background-image: url("/img/Mask Group 1.png");
   background-repeat: no-repeat;
@@ -185,7 +190,7 @@ small {
 }
 
 section {
-  margin: 50px 0;
+  margin: 100px 0;
   padding: 0 30px;
 }
 
@@ -212,7 +217,7 @@ section {
   margin-left: auto;
 }
 
-.card-body h4{
+.card-body h4 {
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -221,11 +226,29 @@ section {
   text-decoration: none;
 }
 
-.card-body a small{
+.card-body a small {
   color: black;
   font-size: 14px;
 }
 
+/*----------------Course Section ----------------*/
+
+#filter-tab > li > button {
+  color: #9E9E9E;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff !important;
+  background-color: var(--primary-color);
+}
+
+.justify-start {
+  margin-left: auto;
+}
+
+.justify-end {
+  margin-right: auto;
+}
 /*----------------Slider Codes--------------*/
 
 * {
@@ -332,7 +355,6 @@ section {
   position: relative;
   min-height: 300px;
   min-width: 300px;
-  padding-bottom: 100%;
 }
 
 .hs__item__card {
