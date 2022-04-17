@@ -4,9 +4,9 @@ $(document).ready(function () {
   const sliderbox = $(".hs__wrapper");
   $.each(instance, function (key, value) {
     let arrows = $(instance[key]).find(".arrow"), box = $(sliderbox[key]).find(".hs"), x = 0, mx = 0;
-      // , prevArrow = arrows.filter(".arrow-prev"),
-      // nextArrow = arrows.filter(".arrow-next")
-      // maxScrollWidth = box[0].scrollWidth - box[0].clientWidth / 2 - box.width() / 2;
+    // , prevArrow = arrows.filter(".arrow-prev"),
+    // nextArrow = arrows.filter(".arrow-next")
+    // maxScrollWidth = box[0].scrollWidth - box[0].clientWidth / 2 - box.width() / 2;
 
     $(arrows).on("click", function () {
       if ($(this).hasClass("arrow-next")) {
@@ -53,16 +53,28 @@ $(document).ready(function () {
     // }
   });
 
-
-
   // Navigation Bar
-  window.addEventListener('scroll', function() {
+
+  window.addEventListener('scroll', function () {
+    const navbar = $("#navbar");
     if (window.scrollY > 75) {
-      document.getElementById('navbar').classList.add('bg-dark');
-      document.getElementById('navbar').classList.remove('bg-transparent');
+      navbar[0].classList.add('bg-dark');
+      navbar[0].classList.remove('bg-transparent');
     } else {
-      document.getElementById('navbar').classList.add('bg-transparent');
-      document.getElementById('navbar').classList.remove('bg-dark');
+      navbar[0].classList.add('bg-transparent');
+      navbar[0].classList.remove('bg-dark');
     }
   });
 })
+
+function navbarColorChanger() {
+  const navbar = $("#navbar");
+  const miniNavBar = $(".navbar-toggler");
+  if (miniNavBar[0].getAttribute("aria-expanded") === "true") {
+    navbar[0].classList.add('bg-dark');
+    navbar[0].classList.remove('bg-transparent');
+  } else {
+    navbar[0].classList.add('bg-transparent');
+    navbar[0].classList.remove('bg-dark');
+  }
+}
