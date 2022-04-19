@@ -45,35 +45,3 @@
   color: #9E9E9E;
   text-decoration: none;
 }
-
-.info-box1{
-  width: 210px;
-  height: 220px;
-  background-color: var(--primary-color);
-  position: absolute;
-}
-
-.info-box2{
-  width: 540px;
-  height: 96px;
-  background-color: white;
-  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-  padding-right: 20px;
-  padding-left: 20px;
-  border-radius: 10px;
-  margin-top: 50px;
-}
-
-.icon-box-course {
-  border-radius: 10px;
-  background-color: var(--primary-color);
-  padding: 10px;
-  width: 48px;
-  height: 48px;
-}
-
-.icon-box-course > svg {
-  margin-top: 4px;
-  margin-right: 2px;
-  color: white;
-}
