@@ -168,10 +168,6 @@ small {
   color: white !important;
 }
 
-/*.navbar-collapse.collapse.show {*/
-/*  background-color: var(--bs-dark) !important;*/
-/*}*/
-
 #main-header {
   background-image: url("/img/Mask Group 1.png");
   background-repeat: no-repeat;
@@ -284,9 +280,10 @@ section {
   margin-top: -50px;
   margin-right: -15px;
   width: 420px;
+  /*transform: rotate(-20deg);*/
 }
 
-#backBoard {
+.backBoard {
   width: 500px;
   height: 310px;
   border-radius: 10px;
@@ -351,7 +348,96 @@ section {
   margin-top: 5px;
 }
 
+/*---------------- Consult ----------------*/
+#spiralLine2 {
+  margin-top: -15px;
+  margin-right: -70px;
+  width: 250px;
+}
 
+.backBoard2 {
+  width: 450px;
+  height: 480px;
+  margin-top: -75px;
+  padding: 0;
+  display: flex;
+}
+
+.user-profile{
+  height: 40px;
+  width: 40px;
+  background-color: #EFEFEF;
+  color: #BDBDBD;
+  font-size: 22px;
+  padding-top: 6px;
+}
+
+.sendBtn {
+  height: 30px;
+  width: 30px;
+  background-color: #EFEFEF;
+  color: #BDBDBD;
+  font-size: 18px;
+  padding-top: 5px;
+  margin-top: 4px;
+  margin-left: -10px;
+  margin-right: auto;
+}
+
+/*---------------- Blog -------------*/
+.read-more{
+  text-align: end;
+  display: block;
+}
+
+.read-more small {
+  color: var(--primary-color) !important;
+}
+
+.weblog-slider {
+  min-width: 400px !important;
+}
+
+/*--------------------- Footer ------------------*/
+
+footer {
+  margin-top: 200px;
+  height: 410px;
+}
+
+footer .social-icon {
+  background-color: #404040;
+  height: 90px
+}
+
+.social-icon-box a {
+  color: white;
+  font-size: 22px;
+  line-height: 1rem;
+  margin-top: 10px;
+}
+
+.social-icon-box a svg {
+  margin: 0 30px;
+}
+
+.footer-part {
+  height: 100%;
+  background-color: #212121;
+  padding-top: 50px;
+}
+
+.footer-links {
+  margin-right: 50px;
+}
+
+.footer-links a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 2rem;
+}
 /*----------------Slider Codes--------------*/
 
 * {
@@ -502,6 +588,86 @@ section {
 ul {
   padding: 0;
   margin: 0;
+}
+
+/*---------- Message Box Codes ----------------*/
+
+.chat-bubbles-container .chat-bubble.writing .dot:nth-child(1),
+.chat-bubbles-container .chat-bubble.writing .dot:nth-child(2),
+.chat-bubbles-container .chat-bubble.writing .dot:nth-child(3) {
+  animation-name: chatBubblesDots;
+  animation-duration: 1s;
+  animation-iteration-count: infinite
+}
+
+@keyframes chatBubblesDots {
+  0%,
+  100% {
+    top: 0
+  }
+  50% {
+    top: -4px
+  }
+}
+
+.chat-bubbles-container {
+  width: 550px;
+  padding-top: 50px;
+  height: 380px;
+  overflow: hidden
+}
+
+.chat-bubbles-container .chat-bubble {
+  top: 600px;
+  opacity: 0;
+  width: 62%;
+  margin-bottom: 10px;
+  padding: 2.5%;
+  border-radius: 10px;
+  position: relative;
+  font-size: 12px;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.3);
+}
+
+.chat-bubbles-container .chat-bubble.left {
+  float: left;
+  clear: both;
+  background: #FFFFFF;
+}
+
+.chat-bubbles-container .chat-bubble.right {
+  float: right;
+  clear: both;
+  background: #212121;
+  color: white;
+}
+
+.chat-bubbles-container .chat-bubble.writing {
+  opacity: 0;
+  top: inherit!important;
+  bottom: 0!important;
+  width: 67px;
+  float: left;
+  clear: both;
+  padding: 3%
+}
+
+.chat-bubbles-container .chat-bubble.writing .dot {
+  position: relative;
+  background: #000;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  float: left;
+  margin-right: 5px
+}
+
+.chat-bubbles-container .chat-bubble.writing .dot:nth-child(2) {
+  animation-delay: .2s
+}
+
+.chat-bubbles-container .chat-bubble.writing .dot:nth-child(3) {
+  animation-delay: .5s
 }
 
 /* ==========================================================================

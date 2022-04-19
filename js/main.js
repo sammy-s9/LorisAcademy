@@ -37,20 +37,6 @@ $(document).ready(function () {
     $(document).on("mouseup", function () {
       mx = 0;
     });
-
-    // function toggleArrows() {
-    //   if (box.scrollLeft() > maxScrollWidth - 10) {
-    //     // disable next button when right end has reached
-    //     prevArrow.addClass("disabled");
-    //   } else if (box.scrollLeft() < 10) {
-    //     // disable prev button when left end has reached
-    //     nextArrow.addClass("disabled");
-    //   } else {
-    //     // both are enabled
-    //     nextArrow.removeClass("disabled");
-    //     prevArrow.removeClass("disabled");
-    //   }
-    // }
   });
 
   // Navigation Bar
