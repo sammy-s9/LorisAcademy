@@ -16,16 +16,11 @@
   <!--  <link rel="manifest" href="site.webmanifest">-->
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="icon" href="favicon.ico">
   <meta name="theme-color" content="#fafafa">
-
-  <style>
-
-  </style>
 </head>
 
 <body dir="rtl">
@@ -59,9 +54,11 @@
           </li>
         </ul>
         <form class="d-flex ms-md-5" style="margin-left: 100px;">
-          <a href="#" class="align-self-center text-white"><i class="far fa-xl fa-search me-4"></i></a>
-          <button class="btn btn-outline-light" type="submit">
-            <i class="fal fa-xl fa-user align-self-center me-2 text-white"></i>
+          <botton class="align-self-center text-white" id="search-icon">
+            <i class="far fa-xl fa-search me-4"></i>
+          </botton>
+          <button class="btn btn-outline-light search" type="submit">
+            <i class="fal fa-xl fa-user align-self-center me-2"></i>
             ورود / ثبت نام
           </button>
         </form>
@@ -859,13 +856,13 @@
               روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
               هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
             </p>
-            <a>
+            <a href="#" style="color: var(--primary-color); text-decoration: none">
               درباره ما بیشتر بدانید
             </a>
           </div>
           <div class="col-3 text-white d-flex align-items-center justify-content-between ms-5">
-           <img class="rounded-3" src="img/samandehi.png">
-           <img class="rounded-3" src="img/enamad.png">
+            <img class="rounded-3" src="img/samandehi.png">
+            <img class="rounded-3" src="img/enamad.png">
           </div>
           <hr style="margin-top: 110px">
           <small class="text-center text-white">
@@ -875,7 +872,16 @@
       </div>
     </div>
   </footer>
-</div>
+
+
+  <div id="search-menu">
+    <div class="wrapper">
+      <form id="form" class="text-center" action="#" method="">
+        <input id="popup-search" class="text-center" type="text" name="u" placeholder="در سایت جستجو کنید..."/>
+        <button id="popup-search-button" type="submit" name="search"><i class="far fa-search"></i></button>
+      </form>
+    </div>
+  </div>
 
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
