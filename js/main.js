@@ -38,19 +38,6 @@ $(document).ready(function () {
       mx = 0;
     });
   });
-
-  // Navigation Bar
-
-  window.addEventListener('scroll', function () {
-    const navbar = $("#navbar");
-    if (window.scrollY > 75) {
-      navbar[0].classList.add('bg-dark');
-      navbar[0].classList.remove('bg-transparent');
-    } else {
-      navbar[0].classList.add('bg-transparent');
-      navbar[0].classList.remove('bg-dark');
-    }
-  });
 })
 
 function navbarColorChanger() {
