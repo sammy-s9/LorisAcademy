@@ -161,11 +161,18 @@ small {
   margin-right: 10px;
   font-weight: bold;
   color: black;
+  padding: 5px;
 }
 
 /* Main Menu Color */
 #navbarSupportedContent > ul > li > a {
   color: white !important;
+  border-radius: 5px;
+}
+
+#navbarSupportedContent ul li a:hover {
+  background-color: var(--primary-color);
+  border-radius: 5px;
 }
 
 #main-header {
