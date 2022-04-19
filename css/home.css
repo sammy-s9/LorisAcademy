@@ -1,4 +1,13 @@
-﻿.navbar.bg-dark, .navbar.bg-transparent {
+﻿.navbar {
+  box-shadow: none;
+}
+
+.normal-nav {
+  box-shadow: 0.3rem 0.3rem 1em rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.navbar.normal-nav, .navbar.bg-transparent {
   -webkit-transition: background-color 0.2s ease-out;
   -moz-transition: background-color 0.2s ease-out;
   -o-transition: background-color 0.2s ease-out;
@@ -18,9 +27,32 @@
   border-radius: 5px;
 }
 
+.navbar-collapse.show{
+  margin-top: 20px;
+}
+
+.navbar-collapse.show .navbar-nav .nav-item .nav-link {
+  color: black !important;
+}
+
+.navbar-normal .nav-item .nav-link {
+  color: black !important;
+  border-radius: 5px;
+}
+
 .navbar-nav .nav-item .nav-link:hover {
   background-color: var(--primary-color);
   border-radius: 5px;
+}
+
+.navbar-normal .nav-item .nav-link:hover {
+  color: white !important;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.navbar-collapse.show .navbar-nav .nav-item .nav-link:hover {
+  color: white !important;
 }
 
 .search {
@@ -29,11 +61,20 @@
   width: 36px;
 }
 
+.secondary-menu .search {
+  color: black !important;
+}
+
 .search:hover{
-  border: 1px solid white;
   background-color: white;
   border-radius: 10px;
   color: black !important;
+}
+
+.secondary-menu .search:hover{
+  color: white !important;
+  background-color: black !important;
+  border-radius: 10px;
 }
 
 #main-header {

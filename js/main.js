@@ -44,11 +44,11 @@ function navbarColorChanger() {
   const navbar = $("#navbar");
   const miniNavBar = $(".navbar-toggler");
   if (miniNavBar[0].getAttribute("aria-expanded") === "true") {
-    navbar[0].classList.add('bg-dark');
+    navbar[0].classList.add('normal-nav');
     navbar[0].classList.remove('bg-transparent');
   } else {
     navbar[0].classList.add('bg-transparent');
-    navbar[0].classList.remove('bg-dark');
+    navbar[0].classList.remove('normal-nav');
   }
 }
 

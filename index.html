@@ -1,6 +1,6 @@
 <!doctype html>
 <!--suppress ALL -->
-<html class="no-js" lang="">
+<html class="no-js" lang="fa">
 
 <head>
   <meta charset="utf-8">
@@ -28,7 +28,7 @@
 <div class="container-fluid ps-0 pe-0">
   <nav id="navbar" class="navbar navbar-light bg-transparent sticky-top navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" style="margin-right: 100px;" href="#">
+      <a class="navbar-brand" style="margin-right: 6.5%;" href="#">
         <img src="img/Loris-Logo-03.png" alt="Logo">
       </a>
       <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -51,10 +51,10 @@
             <a class="nav-link" href="#">اساتید</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">تماس با ما</a>
+            <a class="nav-link" href="contact-us.html">تماس با ما</a>
           </li>
         </ul>
-        <form class="d-flex ms-md-5" style="margin-left: 100px;">
+        <form id="register-form" class="d-flex ms-md-5" style="margin-left: 100px;">
           <a href="#" class="align-self-center text-white search text-center" id="search-icon">
             <i class="far fa-xl fa-search me-4"></i>
           </a>
@@ -830,7 +830,7 @@
             <a href="about-us.html">
               درباره ما
             </a>
-            <a href="#">
+            <a href="contact-us.html">
               تماس با ما
             </a>
           </div>
@@ -862,8 +862,12 @@
             </a>
           </div>
           <div class="col-3 text-white d-flex align-items-center justify-content-between ms-5">
-            <img class="rounded-3" src="img/samandehi.png">
-            <img class="rounded-3" src="img/enamad.png">
+            <a href="https://www.samandehi.ir" target="_blank">
+              <img class="rounded-3" src="img/samandehi.png">
+            </a>
+            <a href="https://www.enamad.ir" target="_blank">
+              <img class="rounded-3" src="img/enamad.png">
+            </a>
           </div>
           <hr style="margin-top: 110px">
           <small class="text-center text-white">
@@ -901,12 +905,27 @@
 
     window.addEventListener('scroll', function () {
       const navbar = $("#navbar");
+      const navbarlink = $(".navbar-nav");
+      const regform = $("#register-form");
+      const regbtn = $("#register-form button");
       if (window.scrollY > 75) {
-        navbar[0].classList.add('bg-dark');
+        navbar[0].classList.add('normal-nav');
         navbar[0].classList.remove('bg-transparent');
+
+        navbarlink[0].classList.add('navbar-normal');
+        regform[0].classList.add('secondary-menu');
+
+        regbtn[0].classList.add('btn-outline-dark');
+        regbtn[0].classList.remove('btn-outline-light');
       } else {
         navbar[0].classList.add('bg-transparent');
-        navbar[0].classList.remove('bg-dark');
+        navbar[0].classList.remove('normal-nav');
+
+        navbarlink[0].classList.remove('navbar-normal');
+        regform[0].classList.remove('secondary-menu');
+
+        regbtn[0].classList.add('btn-outline-light');
+        regbtn[0].classList.remove('btn-outline-dark');
       }
     });
   })

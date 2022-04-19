@@ -183,6 +183,53 @@ small {
   border-color: var(--primary-color);
 }
 
+/*------------------- Navigation Bar---------------------*/
+
+.navbar {
+  box-shadow: 0.3rem 0.3rem 1em rgba(0, 0, 0, 0.3);
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.navbar-collapse.show .navbar-nav .nav-item .nav-link {
+  padding-right: 10px;
+}
+
+.nav-link {
+  color: black !important;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  color: white !important;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.search {
+  padding: 5px;
+  margin-left: 10px;
+  width: 36px;
+  color: black;
+}
+
+.search:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.breadcrumb-item {
+  color: #9E9E9E;
+  text-decoration: none;
+}
+
 section {
   margin: 100px 0;
   padding: 0 30px;
