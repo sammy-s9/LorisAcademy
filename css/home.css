@@ -27,7 +27,7 @@
   border-radius: 5px;
 }
 
-.navbar-collapse.show{
+.navbar-collapse.show {
   margin-top: 20px;
 }
 
@@ -65,13 +65,13 @@
   color: black !important;
 }
 
-.search:hover{
+.search:hover {
   background-color: white;
   border-radius: 10px;
   color: black !important;
 }
 
-.secondary-menu .search:hover{
+.secondary-menu .search:hover {
   color: white !important;
   background-color: black !important;
   border-radius: 10px;
@@ -86,12 +86,30 @@
   left: 0;
 }
 
+#register-form {
+  margin-left: 100px;
+}
+
+/*----------------About Section----------------*/
+
 #laptop-block {
-  width: 215px;
   background-image: url("../img/laptop.png");
   background-size: cover;
   background-position: center;
 }
+
+.card-purple {
+  width: 215px;
+  height: 225px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color)
+}
+
+.about-image {
+border-radius: 5px;
+}
+
+/*------------Course info---------------*/
 
 .card-icon {
   width: 64px;
@@ -123,6 +141,7 @@
   font-size: 14px;
 }
 
+
 /*----------------Course Section ----------------*/
 
 .nav-pills .nav-item .nav-link {
@@ -144,7 +163,6 @@
   text-align: center;
   padding-top: 20px;
   color: white;
-  z-index: 5;
 }
 
 #spiralLine {
@@ -413,7 +431,7 @@ ul {
   width: 550px;
   padding-top: 50px;
   height: 380px;
-  overflow: hidden
+  overflow-y: hidden
 }
 
 .chat-bubbles-container .chat-bubble {
