@@ -383,15 +383,14 @@ footer .social-icon {
   margin-right: 20px;
 }
 
-.footer-links a {
-  display: block;
+.footer-links li a {
   color: white;
   font-weight: bold;
   text-decoration: none;
   line-height: 2rem;
 }
 
-.footer-links a:hover {
+.footer-links li a:hover {
   color: var(--primary-color);
 }
 

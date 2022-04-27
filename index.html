@@ -90,13 +90,21 @@
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
       <div class="col">
-        <div class="position-relative">
-          <div class="text-center d-flex align-items-center card-purple rounded">
-            <span class="h4 text-white">لورم ایپسوم متن ساختگی با نامفهوم از چاپ استفاده</span>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <div class="text-center d-flex align-items-center card-purple rounded mx-auto">
+              <span class="h4 text-white">لورم ایپسوم متن ساختگی با نامفهوم از چاپ استفاده</span>
+            </div>
           </div>
-          <img class="about-image1 rounded" src="img/TeamWork.png" alt="group">
-          <div class="about-image2 rounded"></div>
-          <img class="about-image3 rounded" src="img/Workgroup.png" alt="group">
+          <div class="col position-relative" style="min-height: 210px;">
+            <img class="about-image1 rounded" src="img/TeamWork.png" alt="group">
+          </div>
+          <div class="col">
+            <div class="about-image2 mx-auto rounded"></div>
+          </div>
+          <div class="col position-relative" style="min-height: 255px;">
+            <img class="about-image3 rounded" src="img/Workgroup.png" alt="group">
+          </div>
         </div>
       </div>
       <div class="col">
@@ -115,7 +123,7 @@
   </div>
 </section>
 
-<section class="course">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-12">
@@ -817,7 +825,7 @@
           پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط
           سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
           طراحی اساسا مورد استفاده قرار گیرد.</p>
-        <a type="button" class="btn btn-primary mt-5">بیشتر بخوانید</a>
+        <a href="training.html" class="btn btn-primary mt-5">بیشتر بخوانید</a>
       </div>
     </div>
   </div>
@@ -1409,7 +1417,7 @@
           بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
           هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
           متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی</p>
-        <a type="button" class="btn btn-primary mt-2" style="width: 150px">مشاوره</a>
+        <a href="#" class="btn btn-primary mt-2" style="width: 150px">مشاوره</a>
       </div>
     </div>
   </div>
@@ -1554,33 +1562,53 @@
   <div class="container-fluid footer-part">
     <div class="container">
       <div class="row">
-        <div class="col-2 footer-links">
-          <a href="index.html">
-            صفحه اصلی
-          </a>
-          <a href="courses.html">
-            دوره ها
-          </a>
-          <a href="about-us.html">
-            درباره ما
-          </a>
-          <a href="contact-us.html">
-            تماس با ما
-          </a>
+        <div class="col-2">
+          <ul class="footer-links">
+            <li>
+              <a href="index.html">
+                صفحه اصلی
+              </a>
+            </li>
+            <li>
+              <a href="courses.html">
+                دوره ها
+              </a>
+            </li>
+            <li>
+              <a href="about-us.html">
+                درباره ما
+              </a>
+            </li>
+            <li>
+              <a href="contact-us.html">
+                تماس با ما
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="col-2 footer-links ms-0">
-          <a href="#">
-            اخبار
-          </a>
-          <a href="#">
-            کار آموزی
-          </a>
-          <a href="#">
-            تقویم دوره ها
-          </a>
-          <a href="#">
-            اساتید
-          </a>
+          <ul class="footer-links">
+            <li>
+              <a href="news.html">
+                اخبار
+              </a>
+            </li>
+            <li>
+              <a href="training.html">
+                کار آموزی
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                تقویم دوره ها
+              </a>
+            </li>
+            <li>
+              <a href="teachers.html">
+                اساتید
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="col-4 text-white">
           <h5>
@@ -1614,7 +1642,6 @@
     </div>
   </div>
 </footer>
-
 
 <div id="search-menu">
   <div class="wrapper">
